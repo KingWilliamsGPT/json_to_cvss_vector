@@ -31,7 +31,7 @@ pip install pydantic cvss
 from cvss_json_converter import get_vector
 ```
 
-### 2. Define Your JSON Input
+### 2. Define Your Dict Input
 
 For **CVSS v2**:
 
@@ -61,7 +61,7 @@ cvss3_data = {
 }
 ```
 
-### 3. Convert JSON to CVSS Vector
+### 3. Convert Dict to CVSS Vector
 
 For **CVSS v2**:
 
@@ -125,7 +125,7 @@ CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
 
 ## Error Handling
 
-If the input JSON is invalid or missing mandatory fields, the library will raise a `ValueError` with a descriptive message. For example:
+If the input dictionary is invalid or missing mandatory fields, the library will raise a `ValueError` with a descriptive message. For example:
 
 ```python
 try:
